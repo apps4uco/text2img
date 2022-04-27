@@ -6,8 +6,8 @@ license = "MIT OR Apache-2.0"
 description = "Creates a png image from text. Useful to protect sensitive information from bots and scrapers, such as email addresses and telephone numbers in web pages, and even passwords sent via email"
 authors = ["Apps4u_co"]
 #homepage="http://apps4u.co/"
-#documentation="https://docs.rs/text2img"
-repository="https://github.com/apps4u/text2img"
+documentation="https://docs.rs/text2img"
+repository="https://github.com/apps4uco/text2img"
 keywords = ["email","spam","bot","scraper","secrets"]
 categories = ["command-line-utilities","email","web-programming"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
