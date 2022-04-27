@@ -1,0 +1,31 @@
+[package]
+name = "text2img"
+version = "0.8.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Creates a png image from text. Useful to protect sensitive information from bots and scrapers, such as email addresses and telephone numbers in web pages, and even passwords sent via email"
+authors = ["Apps4u_co"]
+#homepage="http://apps4u.co/"
+#documentation="https://docs.rs/text2img"
+repository="https://github.com/apps4u/text2img"
+keywords = ["graphics","email","spam","bot","antibot","secret","sensitive","information"]
+categories = ["command-line-utilities","email","web-programming"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "3.1.12", features = ["derive"] }
+#image = "0.24.1"
+
+#fast_poisson = "0.5.0"
+#poisson = "0.10.1"
+#poisson-diskus = "1.0.0"
+
+#glyph_brush_layout = "0.2.3"
+#anyhow = "1.0.57"
+fontdue = "0.7.2"
+raqote = "0.8.0"
+fastrand = "1.7.0"
+exitcode = "1.1.2"
+png = "0.17.5"
+#png = "0.17.5"
+#glyph_brush = "0.7.3"
