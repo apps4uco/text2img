@@ -1,6 +1,6 @@
 [package]
 name = "text2img"
-version = "0.8.1"
+version = "0.8.3"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "Creates a png image from text. Useful to protect sensitive information from bots and scrapers, such as email addresses and telephone numbers in web pages, and even passwords sent via email"

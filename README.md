@@ -1,6 +1,15 @@
-# text2img
+
+![Text 2 Image](img/text2img.png)
 
 Command line utility and (soon to be) library.
+
+Banner created using 
+
+text2img -o text2img.png -s 80 -w 30  "Text 2 Image"
+
+# Install Command Line App
+
+cargo install text2img
 
 ## Summary
 
@@ -44,19 +53,27 @@ OPTIONS:
 
 ## Basic Usage
 
-text2img -o email.png "myemail@domain.com"
+text2img -o email.png myemail@example.com
+ 
+![Email using default options](img/email.png)
 
 ## Font size 
 
 50 point font
 
-text2img -o email.png -s 50 "myemail@domain.com" 
+text2img -o email_size50.png -s 50 myemail@example.com 
+
+![Email at 50 points](img/email_size50.png)
 
 ## Weight 
 
-50 point font and 30% of pixels filled in
+30% of pixels filled in.
 
-text2img -o email.png -s 50 -w 30 "myemail@domain.com"
+Note: you probably want to make the font bigger so that the text is easier to read.
+
+text2img -o email_weight30.png -w 30 -s 80 myemail@example.com
+
+![Email at 30 percent](img/email_weight30.png)
 
 ## Font
 
@@ -66,7 +83,7 @@ The Roboto font used was copied from
 
 /usr/share/fonts/truetype/roboto/unhinted/RobotoTTF/Roboto-Regular.ttf
 
-# Roadmap Ideas for next version
+# Roadmap - Ideas for next version
 
 Submit an issue if you would like a feature, 
 or send a PR if you would like to contribute.
@@ -81,15 +98,15 @@ Currently the background is always transparent.
 
 ## Change Font 
 
-text2img --points 12 --font DejaVu "myemail@domain.com" email.png
+text2img -s 12 --font DejaVu -o email.png "myemail@example.com"
 
 ## Read stdin 
 
-echo data.txt | text2img data.png
+echo data.txt | text2img -o data.png
 
 ## Alignment 
 
-echo data.txt | text2img --justify data.png
+echo data.txt | text2img --justify -o data.png
 --center --left --right
 
 # Alternatives to this crate
